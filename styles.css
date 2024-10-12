@@ -1,0 +1,114 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #ff4081; /* Neon pink accent color */
+}
+
+.hidden {
+    display: none;
+}
+
+.page {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Error message styles */
+.error-message {
+    color: #ff6f6f;
+}
+
+/* Login page styles */
+.login-container {
+    display: inline-block;
+    text-align: left;
+    padding: 20px;
+    border: 1px solid #333;
+    background-color: #1f1f1f; /* Dark container background */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333; /* Darker input field */
+    color: #fff;
+}
+
+.login-container input::placeholder {
+    color: #888; /* Subtle placeholder color */
+}
+
+.login-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #ff4081; /* Neon pink button */
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #ff1a73; /* Darker pink on hover */
+}
+
+/* Dashboard styles */
+.sidebar {
+    position: fixed;
+    width: 200px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1f1f1f; /* Dark sidebar */
+    border-right: 1px solid #333;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    color: #e0e0e0; /* Light text */
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background-color: #ff4081; /* Neon pink hover and active state */
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    color: #e0e0e0; /* Light text in content */
+}
+
+.tab-content {
+    background-color: #1f1f1f; /* Dark tab content background */
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}

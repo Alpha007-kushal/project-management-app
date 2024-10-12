@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="page">
+        <h2>Login</h2>
+        <div class="login-container">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter Username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password">
+            <button id="login-btn">Login</button>
+            <p id="login-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <!-- Dashboard Page -->
+    <div id="dashboard-page" class="page hidden">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#" data-tab="dashboard" class="tab-link active">Dashboard</a></li>
+                <li><a href="#" data-tab="team" class="tab-link">Team</a></li>
+                <li><a href="#" data-tab="tasks" class="tab-link">Tasks</a></li>
+                <li><a href="#" data-tab="settings" class="tab-link">Settings</a></li>
+                <li><a href="#" id="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="dashboard-tab" class="tab-content">
+                <h2>Welcome to the Dashboard</h2>
+                <p>Overview of your project management.</p>
+            </div>
+            <div id="team-tab" class="tab-content hidden">
+                <h2>Team Members</h2>
+                <p>Manage your team here.</p>
+            </div>
+            <div id="tasks-tab" class="tab-content hidden">
+                <h2>Tasks</h2>
+                <p>Manage your tasks here.</p>
+            </div>
+            <div id="settings-tab" class="tab-content hidden">
+                <h2>Settings</h2>
+                <p>Configure your settings here.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
